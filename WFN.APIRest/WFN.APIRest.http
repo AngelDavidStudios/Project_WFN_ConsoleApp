@@ -1,0 +1,6 @@
+@WFN.APIRest_HostAddress = http://localhost:5007
+
+GET {{WFN.APIRest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
