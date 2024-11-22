@@ -1,3 +1,6 @@
+using WFN.APIRest.Repository;
+using WFN.APIRest.Repository.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
 // Repositories
+builder.Services.AddScoped<IBancoRepository, BancoRepository>();
 
 var app = builder.Build();
 
